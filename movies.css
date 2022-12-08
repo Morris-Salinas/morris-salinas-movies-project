@@ -67,6 +67,7 @@ p {
 }
 #random-container {
     display: none;
+}
 #movie-large-container{
     display: flex;
     justify-content: center;

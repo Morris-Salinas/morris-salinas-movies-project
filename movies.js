@@ -41,9 +41,10 @@ function getMovies() {
                 newMovieGenres.push(` ${genresChecked[i].value}`);
             }
         }
+        return newMovieGenres.toString();
     }
-    return newMovieGenres.toString()
-}
+
+
 
 let genres = ["sci-fi", "fantasy", "action", "romance", "mystery", "horror", "thriller", "drama", "adventure", "western", "documentary", "epic", "history", "war", "comedy", "crime"];
 
@@ -274,10 +275,9 @@ function makeSearchCard() {
 
     searchMovies().then(data => {
         console.log(data);
-        let smallCards = document.querySelector("#movie-search-container");
-        smallCards.innerHTML = ''
+        // let smallCards = document.querySelector("#movie-container");
+        document.querySelector(".display").style.display = "none"; // show the main content
 
-        let movieCard = '';
         let searchContainer = document.querySelector('#movie-large-container');
 
         let searchedTitle = data.Title
