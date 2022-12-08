@@ -1,3 +1,5 @@
+"use strict";
+(() => {
 // --------------------- Glitch Database --------------------------- //
 // Fetches movie information from the Glitch database.
 // Sets a "Loading" message while the promise is still pending.
@@ -382,3 +384,4 @@ $('#home').click(() => {
 //      TODO: Allow users to sort the movies by rating, title, or genre (if you have it).
 //      TODO: Allow users to search through the movies by rating, title, or genre (if you have it).
 //      Use a free movie API like OMDB to include extra info or render movie posters..
+})();
